@@ -1,2 +1,3 @@
 command = "zowe jobs submit ds \"#{ARGV[0]}\""
-exec(command)
+output = system(command)
+# printf output
